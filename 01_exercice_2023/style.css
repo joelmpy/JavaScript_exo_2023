@@ -25,7 +25,6 @@ body {
 }
 
 nav {
-    background-color: #5668ce;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,7 +39,7 @@ nav {
     line-height: 40px;
     letter-spacing: 5px;
     font-weight: 700;
-    color: var(--body-color);
+    color: black;
 }
 
 .logo span {
@@ -48,7 +47,7 @@ nav {
 }
 
 .toggle {
-    color: white;
+    color: black;
     display: none;
 }
 
@@ -61,7 +60,7 @@ nav .nav-links li {
 .nav-links li a {
     font-size: 15px;
     font-weight: bold;
-    color: var(--body-color);
+    color: var(--main-color);
     cursor: pointer;
 }
 
@@ -130,9 +129,10 @@ nav .nav-links li {
         border-bottom: 1px solid var(--body-color);
     }
 
-    .nav-links a {
+    .nav-links li a {
         font-size: 1.2rem;
         margin: 20px;
+        color: var(--body-color);
     }
 
     .open .nav-links {
@@ -212,6 +212,8 @@ header {
     }
 }
 
+
+
 main {
     flex-shrink: 0;
     width: 100%;
@@ -221,14 +223,16 @@ main {
 .container-main {
     max-width: 1200px;
     margin: 0 auto;
-    height: 40vh;
-    background-color: #c70808;
+    background-color:var(--body-color);
 }
 
 .contenu-first {
     width: 900px;
     margin: 0 auto;
-    background-color: blue;
+}
+
+.first-exo {
+    padding-top: 20px;
 }
 
 .series-frame h3 {
@@ -241,10 +245,65 @@ main {
     color: var(--main-color);
 }
 
-.first-exo {
-    max-width: 700px;
-    padding-top: 20px;
+.series-frame .paragraph {
+    font-size: 14px;
+    text-align: center;
+    color: #8a8eb4;
+    line-height: 20px;
+    padding-top: 30px;
 }
+
+.container-exo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+}
+
+.container-exo .input-value {
+    border: none;
+    padding: 15px 25px;
+    margin: 5px;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: var(--main-color);
+}
+
+.container-exo .btn-result {
+    border: none;
+    padding: 15px 25px;
+    margin: 5px;
+    border-radius: 25px;
+    background-color: var(--main-color);
+    color: var(--body-color);
+    cursor: pointer;
+}
+
+ .contenu-first .result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    border:none;
+    box-shadow: 0 0 10px #f1f1f1;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 25px;
+    padding: 30px;
+    margin-bottom: 10px;
+}
+
+.contenu-first .result p {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: var(--body-color);
+}
+
 
 @media screen and (max-width : 1300px) {
 
@@ -259,12 +318,23 @@ main {
 }
 
 @media screen and (max-width : 800px) {
+
     .container-main,
     .contenu-first {
-        width: 350px;
+        width: 100%;
     }
+
     .first-exo {
-        width: 340px;
+        width: 100%;
+    }
+
+    .result {
+        width: 350px;
+        padding: 20px;
     }
     
+    .result p {
+        font-size: 16px;
+    }
+
 }
