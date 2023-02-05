@@ -211,3 +211,60 @@ header {
         font-size: 12px;
     }
 }
+
+main {
+    flex-shrink: 0;
+    width: 100%;
+    background: #f1f1f1;
+}
+
+.container-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 40vh;
+    background-color: #c70808;
+}
+
+.contenu-first {
+    width: 900px;
+    margin: 0 auto;
+    background-color: blue;
+}
+
+.series-frame h3 {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    line-height: 20px;
+    letter-spacing: 10px;
+    color: var(--main-color);
+}
+
+.first-exo {
+    max-width: 700px;
+    padding-top: 20px;
+}
+
+@media screen and (max-width : 1300px) {
+
+    .container-main,
+    .contenu-first {
+        width: 700px;
+    }
+
+    .first-exo {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width : 800px) {
+    .container-main,
+    .contenu-first {
+        width: 350px;
+    }
+    .first-exo {
+        width: 340px;
+    }
+    
+}

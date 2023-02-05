@@ -10,6 +10,24 @@ toggle.addEventListener('click', function (){
 
 //******************** firstExo **************** */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const person = {
 firstname: "John",
   lastName: "Doe",
