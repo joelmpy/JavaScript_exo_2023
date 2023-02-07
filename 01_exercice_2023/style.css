@@ -18,6 +18,7 @@ html {
     --hover-color: #17255e;
     --body-color: #f9faf9;
     --title-color: #c70808;
+    --paragraph :#8a8eb4;
 }
 
 body {
@@ -223,7 +224,7 @@ main {
 .container-main {
     max-width: 1200px;
     margin: 0 auto;
-    background-color:var(--body-color);
+    background-color: var(--body-color);
 }
 
 .contenu-first {
@@ -270,6 +271,10 @@ main {
     background-color: var(--main-color);
 }
 
+.container-exo .input-value::placeholder {
+    color: var(--body-color);
+}
+
 .container-exo .btn-result {
     border: none;
     padding: 15px 25px;
@@ -280,13 +285,13 @@ main {
     cursor: pointer;
 }
 
- .contenu-first .result {
+.contenu-first .result {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: var(--main-color);
-    border:none;
+    border: none;
     box-shadow: 0 0 10px #f1f1f1;
     max-width: 500px;
     margin: 0 auto;
@@ -310,10 +315,12 @@ main {
     .container-main,
     .contenu-first {
         width: 700px;
+        margin: 0 auto;
     }
 
     .first-exo {
         width: 70%;
+        margin: 0 auto;
     }
 }
 
@@ -332,9 +339,60 @@ main {
         width: 350px;
         padding: 20px;
     }
-    
+
     .result p {
         font-size: 16px;
     }
+
+}
+
+
+.container-2 {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloc-left{
+    width: 50%;
+    height: 50vh;
+}
+
+.bloc-left .box-left {
+    box-sizing: border-box;
+    border: 2px solid var(--main-color);
+    margin: 20px;
+    padding: 10px;
+    height: 30vh;
+    text-align: center;
+}
+
+.box-left #episode-info {
+    color:var() ;
+    font-size: 14px;
+    text-align: center;
+}
+
+.bloc-right-slide {
+    width: 50%;
+    height: 50vh;
+}
+
+.box-image {
+    width: 90%;
+    height: 50%;
+    margin: 0 auto;
+    margin-top: 15%;
+    box-shadow: 0 0 25px -3px rgba(0,0,0,0.4);
+}
+
+.box-image img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width : 800px) {
 
 }
