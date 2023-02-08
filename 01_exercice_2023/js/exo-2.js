@@ -47,9 +47,3 @@ document.querySelector("#third-episode-info").innerText = `Episode: ${
   Duration: ${thirdEpisode.duration} min
   ${thirdEpisode.hasBeenWatched ? "Already watched" : "Not yet watched"}`;
 
-
-let div = document.createElement("div");
-let p = document.createElement("p");
-div.append("Du texte", p);
-
-console.log(div)
