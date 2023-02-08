@@ -1,105 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
-    <script
-    src="https://kit.fontawesome.com/8e1c62a1dd.js"
-    crossorigin="anonymous"
-  ></script>
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="hero">
-      <nav>
-        <div class="logo">
-            <h2>Exos<span>Javscript</span></h2>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/8e1c62a1dd.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="hero">
+    <nav>
+      <div class="logo">
+        <h2>Exos<span>Javscript</span></h2>
+      </div>
+      <div class="toggle">
+        <i class="fa-solid fa-bars ouvrir"></i>
+        <i class="fa-solid fa-circle-xmark ferme"></i>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#Premier">Premier</a></li>
+        <li><a href="#Deuxieme">Deuxieme</a></li>
+        <li><a href="#Troisieme">Troisieme</a></li>
+        <li><a href="#Quartrième">Quartrième</a></li>
+      </ul>
+    </nav>
+    <header>
+      <div class="container-hero">
+        <div class="header-content">
+          <h1 class="main-title">Exercice Javscript</h1>
+          <a href="">
+            <i class="fa-brands fa-github btn">Mon Github</i>
+          </a>
         </div>
-        <div class="toggle">
-          <i class="fa-solid fa-bars ouvrir"></i>
-          <i class="fa-solid fa-circle-xmark ferme"></i>
-        </div>
-        <ul class="nav-links">
-            <li><a href="#Premier">Premier</a></li>
-            <li><a href="#Deuxieme">Deuxieme</a></li>
-            <li><a href="#Troisieme">Troisieme</a></li>
-            <li><a href="#Quartrième">Quartrième</a></li>
-        </ul>
-      </nav>
-      <header>
-        <div class="container-hero">
-            <div class="header-content">
-                <h1 class="main-title">Exercice Javscript</h1>
-                <a href="">
-                    <i class="fa-brands fa-github btn">Mon Github</i>
-                </a>
-            </div>
-        </div>
-      </header>
+      </div>
+    </header>
 
 
     <main>
-        <div class="container-main">
-            <section id="Premier">
-                <div class="contenu-first">
-                    <div class="first-exo series-frame">
-                        <h3>The Story of Tau</h3>
-                        <p class="paragraph">Crée un petit input avec un changement d'heure a chaque fois qu'on change de chiffres</p>
-                        <p class="paragraph">Ajoutons maintenant </p>
-                    </div>
+      <div class="container-main">
+        <section id="Premier">
+          <div class="contenu-first">
+            <div class="first-exo series-frame">
+              <h3>The Story of Tau</h3>
+              <p class="paragraph">Crée un petit input avec un changement d'heure a chaque fois qu'on change de chiffres
+              </p>
+              <p class="paragraph">Ajoutons maintenant </p>
+            </div>
 
-                    <div class="container-exo">
-                        <input type="number" min="1"  placeholder="1" class="input-value">
-                        <button class="btn-result">Calucler</button>
-                    </div>
-                    <div class="result">
-                        <p id="heure">Heures</p>
-                        <p id="minute">Minute</p>
-                        <p id="seconde">Seconde</p>
-                    </div>
-                </div>
-            </section>
+            <div class="container-exo">
+              <input type="number" min="1" placeholder="1" class="input-value">
+              <button class="btn-result">Calucler</button>
+            </div>
+            <div class="result">
+              <p id="heure">Heures</p>
+              <p id="minute">Minute</p>
+              <p id="seconde">Seconde</p>
+            </div>
+          </div>
+        </section>
 
-            <section id="Deuxieme">
-              <div class="contenu-first">
-                <div class="first-exo series-frame">
-                <h3>The Story of Tau</h3>
-                <p class="paragraph">Crée un sliderShow avec des images du code</p>
-                <p class="paragraph">Ajoutons maintenant les informations</p>
-              </div>
-              <div class="container-2">
-                <div class="bloc-left">
-                  <div class="box-left">
-                    <p id="episode-info"></p>
-                  </div>
-                </div>
-                <div class="bloc-right-slide">
-                  <div class="box-image">
-                    <img id="image">
-                  </div>
-          
+        <section id="Deuxieme">
+          <div class="contenu-first">
+            <div class="first-exo series-frame">
+              <h3>The Story of Tau</h3>
+              <p class="paragraph">Crée un sliderShow avec des images du code</p>
+              <p class="paragraph">Ajoutons maintenant les informations</p>
+            </div>
+            <div class="container-2">
+              <div class="bloc-left">
+                <div class="box-left">
+                  <p id="first-episode-info"></p>
+                  <p id="second-episode-info"></p>
+                  <p id="third-episode-info"></p>
                 </div>
               </div>
-        
+              <div class="bloc-right-slide">
+                <div class="box-image">
+                  <img id="image">
+                </div>
+              </div>
+            </div>
+        </section>
 
-            </section>
 
 
 
-
-        </div>
+      </div>
     </main>
 
 
@@ -111,8 +106,9 @@
 
 
 
-    </div>
-    <script src="./js/main.js"></script>
-    <script src="./js/exo-2.js"></script>
-  </body>
+  </div>
+  <script src="./js/main.js"></script>
+  <script src="./js/exo-2.js"></script>
+</body>
+
 </html>

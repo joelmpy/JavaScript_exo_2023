@@ -369,8 +369,11 @@ main {
     text-align: center;
 }
 
-.box-left #episode-info {
-    color:var() ;
+#first-episode-info,
+#second-episode-info,
+#third-episode-info
+ {
+    color:var(--main-color) ;
     font-size: 14px;
     text-align: center;
 }
@@ -394,5 +397,38 @@ main {
 }
 
 @media screen and (max-width : 800px) {
-
+.container-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+.box-image {
+    margin-top: 40px;
+}
+}
+
+@media only screen and (max-width : 350px){
+    .bloc-left{
+        width: 100%;
+        margin-top: 50%;
+    }
+    
+    .bloc-right-slide {
+        width: 100%;
+        height: 50vh;
+    }
+    
+    .box-image {
+        width: 90%;
+        height: 50%;
+        margin: 0 auto;
+        margin-top: 25%;
+    }
+    
+    .box-image img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
