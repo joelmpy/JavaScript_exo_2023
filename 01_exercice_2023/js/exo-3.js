@@ -256,6 +256,8 @@ addUp(12);
 // p.innerHTML = "<strong>Mon plus grand</strong>"
 // p.style.color = "black"
 
+// Récupération des eventements 
+
 let parent = document.getElementById("parent");
 let countParent = document.getElementById("parent-count");
 let parentClicks = 0;
@@ -274,3 +276,36 @@ document.getElementById("child").addEventListener("click", function (e) {
 });
 
 
+document.getElementById("name").
+addEventListener('input', function(e){
+    document.getElementById('res-name').innerHTML = e.target.value
+})
+
+document.getElementById('gender').
+addEventListener('change', function(e){
+    document.getElementById('res-gender').innerHTML = e.target.value
+})
+
+
+// Requete http //
+
+function askHello (){
+    fetch('https://mockbin.com/request?greetings=salut')
+    .then(function(res){
+        if (res.ok){
+           return res.json()
+        }
+    })
+    .then(function(value){
+        console.log(value);
+        document.getElementById('result-url')
+        .innerHTML = value.queryString.greetings
+   
+    })
+    .catch(function(err){
+        console.log(err, "c'est pas bon");
+    })
+}
+
+document.getElementById('ask-hello')
+.addEventListener('click', askHello)
