@@ -45,7 +45,6 @@ let float = 13.9;
 
 // let password = "azer"
 
-
 // ## 07 - Condition II
 
 // - Créez une variable `password` de valeur `"azerty"`
@@ -69,9 +68,6 @@ let float = 13.9;
 //     console.log("Nothing is good");
 // }
 
-
-
-
 // - Créez une variable `random` qui contient une valeur aléatoire entre 1 et 6 (nombres entiers seulement)
 // - À l'aide d'une condition, affichez "Yes I win !" si `random` est égal à 6, et "So close..." dans les autres cas
 
@@ -85,8 +81,6 @@ if (random === 6) {
   console.log("So close..." + "" + random);
 }
 
-
-
 let month = "April";
 
 switch (month) {
@@ -96,29 +90,26 @@ switch (month) {
   case "October":
     console.log("Spring");
     break;
-  case  "June":
+  case "June":
     console.log("Summer");
     break;
-   case "April":
-    console.log("Fall" );
+  case "April":
+    console.log("Fall");
     break;
 
-    default: 
+  default:
     console.log("That's not a season...");
 }
 
-
-
-
 // - Créez une variable `fruits` qui contiendra un tableau avec les valeurs `"mango"`, `"lemon"` et `"blueberry"`
-// - Affichez `fruits` dans la console 
-let fruits = ["mango", "lemon", "blueberry"]
+// - Affichez `fruits` dans la console
+let fruits = ["mango", "lemon", "blueberry"];
 // console.table(fruits)
 
 // - Créez une variable `ingredients` qui contiendra un tableau avec les valeurs `"eggs"`, `"milk"` et `"butter"`
 // - Faites apparaître `"milk"` dans la console
 
-let ingredients = ["eggs", "milk", "butter"]
+let ingredients = ["eggs", "milk", "butter"];
 // console.table(ingredients[1])
 // console.log(ingredients.indexOf("butter"))
 
@@ -128,8 +119,7 @@ let ingredients = ["eggs", "milk", "butter"]
 // - Ajoutez `"laptop"` à la fin du tableau puis affichez le résultat
 // - Enlevez `"chair"` puis affichez le résultat
 
-
-let objets = ["pen", "book", "lamp"]
+let objets = ["pen", "book", "lamp"];
 // objets.unshift("chair")
 // objets.pop()
 // objets.push('laptop')
@@ -142,8 +132,7 @@ let objets = ["pen", "book", "lamp"]
 // - Inversez l'ordre des éléments de `numbers` puis affichez le résultat
 // - Rangez les éléments de `numbers` dans l'ordre croissant puis affichez le résultat
 
-
-let numbers = [4, 10, 8, 12, 6]
+let numbers = [4, 10, 8, 12, 6];
 // console.log(numbers.reverse())
 // numbers.sort((a, b) => a - b)
 // console.log(numbers)
@@ -162,7 +151,6 @@ let numbers = [4, 10, 8, 12, 6]
 
 // console.log(total);
 
-
 // let finish = 100
 
 // for(i = 0; i <= finish; i++){
@@ -176,7 +164,6 @@ let numbers = [4, 10, 8, 12, 6]
 //         console.log(i);
 //     }
 // }
-
 
 // class cat {
 //     constructor(name, age, isCute){
@@ -216,40 +203,74 @@ let numbers = [4, 10, 8, 12, 6]
 // console.log("cat2 isCute? 5", cat2[keyName])
 // console.log("cat2 isCute? 6", cats[1][keyName])
 
-function checkIfEven (num) {
-    if(num % 2 === 0){
-        console.log("num is pair", num);
-    } else {
-        console.log("il esr impair", num);
-    }
+function checkIfEven(num) {
+  if (num % 2 === 0) {
+    console.log("num is pair", num);
+  } else {
+    console.log("il esr impair", num);
+  }
 }
 
-checkIfEven(2)
+checkIfEven(2);
 
-function compare (num1, num2){
-        if(num1 > num2){
-            console.log(`${num1} is bigger`);
-        } else if (num2 > num1) {
-            console.log(`${num2} is bigger`);
-        } else {
-            console.log("both are the same");
-        }
+function compare(num1, num2) {
+  if (num1 > num2) {
+    console.log(`${num1} is bigger`);
+  } else if (num2 > num1) {
+    console.log(`${num2} is bigger`);
+  } else {
+    console.log("both are the same");
+  }
 }
 
-compare(20, 15)
-compare(25, 40)
-compare(30, 80)
+compare(20, 15);
+compare(25, 40);
+compare(30, 80);
+
+let minCarre = 5;
+let maxCarre = 10;
+let sum = 0;
+
+for (let i = 5; i <= 10; i++) {
+  sum += i * i;
+}
+
+console.log(sum);
 
 function addUp(num) {
-    var sum = 0;
+  var sum = 0;
 
-    for (var i = 1; i <= num; i++) {
-        sum += i;
-    }
+  for (var i = 1; i <= num; i++) {
+    sum += i;
+  }
 
-    return sum;
+  return sum;
 }
 
 var result = addUp(12);
 console.log(result);
 addUp(12);
+
+// let p = document.createElement('p')
+// document.getElementById('main-new').appendChild(p)
+// p.innerHTML = "<strong>Mon plus grand</strong>"
+// p.style.color = "black"
+
+let parent = document.getElementById("parent");
+let countParent = document.getElementById("parent-count");
+let parentClicks = 0;
+let childClicks = 0;
+
+parent.addEventListener("click", function (event) {
+  countParent.innerHTML = ++parentClicks + "";
+  event.preventDefault();
+});
+
+document.getElementById("child").addEventListener("click", function (e) {
+  e.preventDefault();
+  e.stopPropagation();
+
+  document.getElementById("child-count").innerHTML = ++childClicks + "";
+});
+
+
